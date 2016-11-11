@@ -20,8 +20,8 @@ import sys
 import time
 
 # cluster specification
-parameter_servers = ["pc-01:2222"]
-workers = [	"pc-02:2222", 
+parameter_servers = ["140.124.183.81:2222"]
+workers = [	"140.124.183.103:2222", 
 			"pc-03:2222",
 			"pc-04:2222"]
 cluster = tf.train.ClusterSpec({"ps":parameter_servers, "worker":workers})
